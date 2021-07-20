@@ -39,4 +39,22 @@ while ($zero < $arrlen){
     ?><br><hr><?php
 }
 
+// assosiative array
+//normal array
+$animals = array("cat" , "dog" , "eagle");
+// assosiative array --> a value for each item
+$animalsounds = array('cat' => 'meow' , 'dog' => 'bark' ,'eagles' => 'jikjik' );
+//for better writing
+$animalsounds = array(
+    'cat' => 'meow' ,
+     'dog' => 'bark' ,
+     'eagles' => 'jikjik'
+     );
+//how to call ?
+echo $animalsounds[cat];
+
+
+
+
+
 ?>

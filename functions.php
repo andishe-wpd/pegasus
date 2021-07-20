@@ -6,6 +6,8 @@ function styleandscripts(){
     wp_enqueue_style('googlefont','//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
 }
 add_action('wp_enqueue_scripts','styleandscripts');
+
+// to add the page titles
 function titlegenerator(){
     add_theme_support('title-tag');
 }
