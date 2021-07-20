@@ -12,3 +12,9 @@ function titlegenerator(){
     add_theme_support('title-tag');
 }
 add_action('after_setup_theme','titlegenerator');
+
+//to add menu to theme features
+function navborn(){
+    register_nav_menu( 'headermenulocation' , 'header menu location' );
+}
+add_action('after_setup_theme','navborn');

@@ -1,10 +1,14 @@
 <?php
-//responsive meta
+//responsive meta DO NOT FORGET IT for resposivity
 <meta name="viewport" content="width=device-width">
+//language for html
+lang="en" => <?php language_attributes(); ?>
+//charset
+bloginfo( 'charset' )  ==> UTF8
+//bodyclass   adding diffrent body class
+body_class()
 
-
-
-//post query
+//post queries
 while (heve_posts()){
     the_post();
     the_title();
@@ -12,6 +16,9 @@ while (heve_posts()){
     the_content();
 }
 
+
+//nav menu dynamic
+1- adding menu location to functions.php
 
 //echo or not to echo : get_functions() needs echo to be shown
 
