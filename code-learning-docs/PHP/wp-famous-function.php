@@ -20,6 +20,14 @@ while (heve_posts()){
     the_title();
     the_permalink();
     the_content();
+    the_excerpt(  )
+    the_author_posts_link()
+    the_time('M , Y')
+    echo get_the_category_list(', ' )
+    //for listing pagination
+    echo paginate_links(  );
+    //post archive
+    the_archive_title();
 }
 
 
