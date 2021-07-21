@@ -1,4 +1,10 @@
 <?php
+
+//heading stuff to add CSS JS and other attrebutes 
+1 - function.php -> enquescripts
+2 - header.php   -> wp_head() // *
+3 - each page    -> get_header()
+
 //responsive meta DO NOT FORGET IT for resposivity
 <meta name="viewport" content="width=device-width">
 //language for html
@@ -18,7 +24,15 @@ while (heve_posts()){
 
 
 //nav menu dynamic
-1- adding menu location to functions.php
+adding menu location to functions.php
+1- in function.php
+function navborn(){
+  register_nav_menu( 'headermenulocation' , 'header menu location' );
+}
+2- in the sections for import nav
+wp_nav_menu( array(
+  'theme_location' => 'function.php entered name'
+) );
 
 //echo or not to echo : get_functions() needs echo to be shown
 

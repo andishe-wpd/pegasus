@@ -16,5 +16,7 @@ add_action('after_setup_theme','titlegenerator');
 //to add menu to theme features
 function navborn(){
     register_nav_menu( 'headermenulocation' , 'header menu location' );
+    register_nav_menu( 'footer1menu' , 'footer 1 menu' );
+    register_nav_menu( 'footer2menu' , 'footer 2 menu' );
 }
 add_action('after_setup_theme','navborn');
