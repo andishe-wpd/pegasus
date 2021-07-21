@@ -40,6 +40,7 @@ wp_nav_menu( array(
 //if no : wp_get_post_parent_id(get_the_ID()) == 0             false;
 //if yes: wp_get_post_parent_id(get_the_ID()) == any number    true ;
 if(wp_get_post_parent_id(get_the_ID()))
+wp_get_post_parent_id( 0 ) //means look at rhe current page
 
 
 //pages

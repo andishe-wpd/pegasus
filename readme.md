@@ -3,7 +3,7 @@
 2. Getting Started                               - done
 3. First Coding Steps PHP                        - done
 4. WordPress Specific PHP                        - done
-5. Pages
+5. Pages                                         - done
 6. Building the Blog Section
 7. Workflow and Automation
 8. Events Post Type
