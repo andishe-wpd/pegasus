@@ -20,3 +20,4 @@ add_action('init','function_that_register_new_post_type')
 //we know this custom post types now lives on cyrrent theme files 
 // => the importance of using MU-plugins
 ?>
+<!-- dont forget we need to tell wordpress this CPT needs supports archive -->
