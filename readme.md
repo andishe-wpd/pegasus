@@ -1,10 +1,12 @@
-<!-- little note for hosein -->
-1. Welcome!                                      - done
-2. Getting Started                               - done
-3. First Coding Steps PHP                        - done
-4. WordPress Specific PHP                        - done
-5. Pages                                         - done
-6. Building the Blog Section
+<!-- little note for mr-pezeshki -->
+
+<!-- 1. Welcome!                  -->
+<!-- 2. Getting Started           -->
+<!-- 3. First Coding Steps PHP    -->
+<!-- 4. WordPress Specific PHP    -->
+<!-- 5. Pages                     -->
+<!-- 6. Building the Blog Section -->
+
 7. Workflow and Automation
 8. Events Post Type
 9. Programs Post Type
