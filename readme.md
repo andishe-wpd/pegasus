@@ -1,13 +1,12 @@
-<!-- little note for mr-pezeshki -->
+little note for mr-pezeshki
 
-<!-- 1. Welcome!                  -->
-<!-- 2. Getting Started           -->
-<!-- 3. First Coding Steps PHP    -->
-<!-- 4. WordPress Specific PHP    -->
-<!-- 5. Pages                     -->
-<!-- 6. Building the Blog Section -->
-
-7. Workflow and Automation
+1. done --- Welcome!
+2. done --- Getting Started
+3. done --- First Coding Steps PHP
+4. done --- WordPress Specific PHP
+5. done --- Pages
+6. done --- Building the Blog Section
+7. done --- Workflow and Automation
 8. Events Post Type
 9. Programs Post Type
 10. Professors Post Type
