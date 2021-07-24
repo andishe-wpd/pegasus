@@ -1920,11 +1920,14 @@ body.admin-bar .search-overlay {
   left: 15px;
   top: -15px;
 }
-.aa-properties-item .for-rent {
+.aa-properties-item .For-Rent {
   background-color: #20ceb3;
 }
-.aa-properties-item .sold-out {
-  background-color: #ff0000;
+.aa-properties-item .Sold-Out {
+  background-color: #e76a6a;
+}
+.aa-properties-item .For-Sale {
+  background-color: #59abe3;
 }
 .aa-properties-item .aa-properties-item-content {
   background-color: #fff;

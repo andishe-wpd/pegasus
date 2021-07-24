@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <div class="page-banner">
-      <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('images/library-hero.jpg') ?>)"></div>
+      <div class="page-banner__bg-image" style="background-image: url(http://localhost/pegasus/wp-content/uploads/2021/07/1.jpg)"></div>
       <div class="page-banner__content container t-center c-white">
-        <h1 class="headline headline--large">welcome!</h1>
-        <h2 class="headline headline--medium">We think you&rsquo;ll like it here.</h2>
+        <h1 class="headline headline--large">FIND YOUR DREAM HOUSE</h1>
+        <h2 class="headline headline--medium">YOU HAVE MONEY ?&rsquo;WE WILL LOVE YOU.</h2>
         <h3 class="headline headline--small">Why don&rsquo;t you check out the <strong>major</strong> you&rsquo;re interested in?</h3>
         <a href="#" class="btn btn--large btn--blue">Find Your Major</a>
       </div>
@@ -19,174 +19,46 @@
         </div>
         <div class="aa-latest-properties-content">
           <div class="row">
-            <div class="col-md-4">
+              <div class="col-md-4">
+              <?php
+              $latestp = new WP_Query(array(
+                   'post_type' => 'real_estate',
+                  'posts_per_page' => 6,
+                ));
+                while($latestp->have_posts()){
+                  $latestp -> the_post(  );
+                  ?>
               <article class="aa-properties-item">
-                <a href="#" class="aa-properties-item-img">
-                  <img src="img/item/1.jpg" alt="img">
+                  <a href="#" class="aa-properties-item-img">
+                  <img src="<?php the_field('featured_image_2') ?>" alt="img">
                 </a>
-                <div class="aa-tag for-sale">
-                  For Sale
+                <div class="aa-tag <?php the_field('kind') ?>">
+                  <?php the_field('kind') ?>
                 </div>
                 <div class="aa-properties-item-content">
                   <div class="aa-properties-info">
-                    <span>5 Rooms</span>
-                    <span>2 Beds</span>
-                    <span>3 Baths</span>
-                    <span>1100 SQ FT</span>
+                    <span><?php the_field('rooms'); echo ' Rooms' ?></span>
+                    <span><?php the_field('beds'); echo ' Beds' ?></span>
+                    <span><?php the_field('bath'); echo ' Bath' ?></span>
+                    <span><?php the_field('sq_ft'); echo ' SQ FT' ?></span>
                   </div>
                   <div class="aa-properties-about">
-                    <h3><a href="#">Appartment Title</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam odit vitae.</p>                      
+                    <h3><a href="<?php the_permalink(  ) ?>"><?php the_title() ?></a></h3>
+                    <p><?php the_content() ?></p>                      
                   </div>
                   <div class="aa-properties-detial">
                     <span class="aa-price">
-                      $35000
+                      <?php the_field('price'); echo ' $'?>
                     </span>
-                    <a href="#" class="aa-secondary-btn">View Details</a>
+                    <a href="<?php the_permalink(  ) ?>" class="aa-secondary-btn">View Details</a>
                   </div>
                 </div>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="aa-properties-item">
-                <a href="#" class="aa-properties-item-img">
-                  <img src="img/item/2.jpg" alt="img">
-                </a>
-                <div class="aa-tag for-rent">
-                  For Rent
+                </article>
+            
+                  <?php
+                }
+                ?>
                 </div>
-                <div class="aa-properties-item-content">
-                  <div class="aa-properties-info">
-                    <span>5 Rooms</span>
-                    <span>2 Beds</span>
-                    <span>3 Baths</span>
-                    <span>1100 SQ FT</span>
-                  </div>
-                  <div class="aa-properties-about">
-                    <h3><a href="#">Appartment Title</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam odit vitae.</p>                      
-                  </div>
-                  <div class="aa-properties-detial">
-                    <span class="aa-price">
-                      $11000
-                    </span>
-                    <a href="#" class="aa-secondary-btn">View Details</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="aa-properties-item">
-                <a href="#" class="aa-properties-item-img">
-                  <img src="img/item/3.jpg" alt="img">
-                </a>
-                <div class="aa-tag sold-out">
-                  Sold Out
-                </div>
-                <div class="aa-properties-item-content">
-                  <div class="aa-properties-info">
-                    <span>5 Rooms</span>
-                    <span>2 Beds</span>
-                    <span>3 Baths</span>
-                    <span>1100 SQ FT</span>
-                  </div>
-                  <div class="aa-properties-about">
-                    <h3><a href="#">Appartment Title</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam odit vitae.</p>                      
-                  </div>
-                  <div class="aa-properties-detial">
-                    <span class="aa-price">
-                      $15000
-                    </span>
-                    <a href="#" class="aa-secondary-btn">View Details</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="aa-properties-item">
-                <a href="#" class="aa-properties-item-img">
-                  <img src="img/item/4.jpg" alt="img">
-                </a>
-                <div class="aa-tag for-sale">
-                  For Sale
-                </div>
-                <div class="aa-properties-item-content">
-                  <div class="aa-properties-info">
-                    <span>5 Rooms</span>
-                    <span>2 Beds</span>
-                    <span>3 Baths</span>
-                    <span>1100 SQ FT</span>
-                  </div>
-                  <div class="aa-properties-about">
-                    <h3><a href="#">Appartment Title</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam odit vitae.</p>                      
-                  </div>
-                  <div class="aa-properties-detial">
-                    <span class="aa-price">
-                      $35000
-                    </span>
-                    <a href="#" class="aa-secondary-btn">View Details</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="aa-properties-item">
-                <a href="#" class="aa-properties-item-img">
-                  <img src="img/item/5.jpg" alt="img">
-                </a>                
-                <div class="aa-tag sold-out">
-                  Sold Out
-                </div>
-                <div class="aa-properties-item-content">
-                  <div class="aa-properties-info">
-                    <span>5 Rooms</span>
-                    <span>2 Beds</span>
-                    <span>3 Baths</span>
-                    <span>1100 SQ FT</span>
-                  </div>
-                  <div class="aa-properties-about">
-                    <h3><a href="#">Appartment Title</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam odit vitae.</p>                      
-                  </div>
-                  <div class="aa-properties-detial">
-                    <span class="aa-price">
-                      $11000
-                    </span>
-                    <a href="#" class="aa-secondary-btn">View Details</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="aa-properties-item">
-                <a href="#" class="aa-properties-item-img">
-                  <img src="img/item/6.jpg" alt="img">
-                </a>
-                <div class="aa-tag for-rent">
-                  For Rent
-                </div>
-                <div class="aa-properties-item-content">
-                  <div class="aa-properties-info">
-                    <span>5 Rooms</span>
-                    <span>2 Beds</span>
-                    <span>3 Baths</span>
-                    <span>1100 SQ FT</span>
-                  </div>
-                  <div class="aa-properties-about">
-                    <h3><a href="#">Appartment Title</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam odit vitae.</p>                      
-                  </div>
-                  <div class="aa-properties-detial">
-                    <span class="aa-price">
-                      $15000
-                    </span>
-                    <a href="#" class="aa-secondary-btn">View Details</a>
-                  </div>
-                </div>
-              </article>
-            </div>
           </div>
         </div>
       </div>
