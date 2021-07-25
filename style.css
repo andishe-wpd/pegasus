@@ -1683,7 +1683,6 @@ body.admin-bar .search-overlay {
 }
 .full-width-split__two {
   flex: 1;
-  background-color: #faf0ca;
   padding: 1.6rem 16px;
 }
 @media (min-width: 960px) {
@@ -1978,4 +1977,168 @@ body.admin-bar .search-overlay {
 }
 .aa-properties-item .aa-properties-item-content .aa-properties-detial a {
   float: right;
+}
+/*==================
+ AGENTS SECTION
+====================*/
+
+#aa-agents {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 100px 0;
+}
+#aa-agents .aa-agents-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#aa-agents .aa-agents-area .aa-agents-content {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+}
+#aa-agents .aa-agents-area .aa-agents-content .aa-agents-slider {
+  margin-left: -30px;
+}
+#aa-agents .aa-agents-area .aa-agents-content .aa-agents-slider li {
+  float: left;
+  margin-left: 30px;
+  width: 22.42%;
+}
+#aa-agents
+  .aa-agents-area
+  .aa-agents-content
+  .aa-agents-slider
+  li
+  .aa-single-agents {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#aa-agents
+  .aa-agents-area
+  .aa-agents-content
+  .aa-agents-slider
+  li
+  .aa-single-agents
+  .aa-agents-img {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#aa-agents
+  .aa-agents-area
+  .aa-agents-content
+  .aa-agents-slider
+  li
+  .aa-single-agents
+  .aa-agents-img
+  img {
+  width: 100%;
+}
+#aa-agents
+  .aa-agents-area
+  .aa-agents-content
+  .aa-agents-slider
+  li
+  .aa-single-agents
+  .aa-agetns-info {
+  display: inline;
+  float: left;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #0d3b66;
+}
+#aa-agents
+  .aa-agents-area
+  .aa-agents-content
+  .aa-agents-slider
+  li
+  .aa-single-agents
+  .aa-agetns-info
+  h4 {
+  color: #fff;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#aa-agents
+  .aa-agents-area
+  .aa-agents-content
+  .aa-agents-slider
+  li
+  .aa-single-agents
+  .aa-agetns-info
+  h4
+  a {
+  color: #fff;
+}
+#aa-agents
+  .aa-agents-area
+  .aa-agents-content
+  .aa-agents-slider
+  li
+  .aa-single-agents
+  .aa-agetns-info
+  span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+#aa-agents
+  .aa-agents-area
+  .aa-agents-content
+  .aa-agents-slider
+  li
+  .aa-single-agents
+  .aa-agetns-info
+  .aa-agent-social {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#aa-agents
+  .aa-agents-area
+  .aa-agents-content
+  .aa-agents-slider
+  li
+  .aa-single-agents
+  .aa-agetns-info
+  .aa-agent-social
+  a {
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  margin: 10px 5px;
+  min-width: 40px;
+  padding: 5px 0;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#aa-agents
+  .aa-agents-area
+  .aa-agents-content
+  .aa-agents-slider
+  li
+  .aa-single-agents
+  .aa-agetns-info
+  .aa-agent-social
+  a:hover,
+#aa-agents
+  .aa-agents-area
+  .aa-agents-content
+  .aa-agents-slider
+  li
+  .aa-single-agents
+  .aa-agetns-info
+  .aa-agent-social
+  a:focus {
+  background-color: #fff;
 }

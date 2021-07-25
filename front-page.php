@@ -65,7 +65,42 @@
     </div>
   </section>
   </div>
-    <div class="full-width-split group">
+    <div class="hero-slider">
+      <div data-glide-el="track" class="glide__track">
+        <div class="glide__slides">
+          <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri( 'images/bus.jpg' ) ?>)">
+            <div class="hero-slider__interior container">
+              <div class="hero-slider__overlay">
+                <h2 class="headline headline--medium t-center">Free Transportation</h2>
+                <p class="t-center">All students have free unlimited bus fare.</p>
+                <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri( 'images/apples.jpg' ) ?>)">
+            <div class="hero-slider__interior container">
+              <div class="hero-slider__overlay">
+                <h2 class="headline headline--medium t-center">An Apple a Day</h2>
+                <p class="t-center">Our dentistry program recommends eating apples.</p>
+                <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/bread.jpg') ?>)">
+            <div class="hero-slider__interior container">
+              <div class="hero-slider__overlay">
+                <h2 class="headline headline--medium t-center">Free Food</h2>
+                <p class="t-center">Fictional University offers lunch plans for those in need.</p>
+                <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]"></div>
+      </div>
+    </div>
+  </div>
+      <div class="full-width-split group">
       <div class="full-width-split__one">
         <div class="full-width-split__inner">
           <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
@@ -121,40 +156,53 @@
         </div>
       </div>
     </div>
-
-    <div class="hero-slider">
-      <div data-glide-el="track" class="glide__track">
-        <div class="glide__slides">
-          <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri( 'images/bus.jpg' ) ?>)">
-            <div class="hero-slider__interior container">
-              <div class="hero-slider__overlay">
-                <h2 class="headline headline--medium t-center">Free Transportation</h2>
-                <p class="t-center">All students have free unlimited bus fare.</p>
-                <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
-              </div>
+    <section id="aa-agents">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-agents-area">
+            <div class="aa-title">
+              <h2>Our Agents</h2>
+              <span></span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sit ea nobis quae vero voluptatibus.</p>
             </div>
-          </div>
-          <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri( 'images/apples.jpg' ) ?>)">
-            <div class="hero-slider__interior container">
-              <div class="hero-slider__overlay">
-                <h2 class="headline headline--medium t-center">An Apple a Day</h2>
-                <p class="t-center">Our dentistry program recommends eating apples.</p>
-                <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/bread.jpg') ?>)">
-            <div class="hero-slider__interior container">
-              <div class="hero-slider__overlay">
-                <h2 class="headline headline--medium t-center">Free Food</h2>
-                <p class="t-center">Fictional University offers lunch plans for those in need.</p>
-                <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
-              </div>
+            <!-- agents content -->
+            <div class="aa-agents-content">
+              <ul class="aa-agents-slider">
+                <?php
+                $ouragent = new WP_Query(array(
+                  'post_type' => 'agent',
+                  'post_pre_page ' => 4,
+                ));
+                while($ouragent->have_posts(  )){
+                  $ouragent->the_post();
+                  ?>
+                <li>
+                  <div class="aa-single-agents">
+                    <div class="aa-agents-img">
+                      <img src="<?php the_field('iamge') ?>" alt="agent member image">
+                    </div>
+                    <div class="aa-agetns-info">
+                      <h4><a href="#"><?php the_field('name') ?></a></h4>
+                      <span>Top Agent</span>
+                      <div class="aa-agent-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <?php
+                };
+                ?>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]"></div>
       </div>
     </div>
-  </div>
+  </section>
+  <!-- / Our Agent Section-->
 <?php get_footer(); ?>
