@@ -1995,8 +1995,8 @@ body.admin-bar .search-overlay {
 }
 #aa-agents .aa-agents-area .aa-agents-content {
   display: inline;
-  float: left;
-  width: 100%;
+  float: right;
+  width: 84%;
   margin-top: 50px;
 }
 #aa-agents .aa-agents-area .aa-agents-content .aa-agents-slider {
@@ -2052,6 +2052,7 @@ body.admin-bar .search-overlay {
   text-align: center;
   color: #fff;
   background-color: #0d3b66;
+  margin-top: -10px;
 }
 #aa-agents
   .aa-agents-area
@@ -2141,4 +2142,8 @@ body.admin-bar .search-overlay {
   .aa-agent-social
   a:focus {
   background-color: #fff;
+}
+.botn {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
 }

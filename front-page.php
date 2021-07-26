@@ -23,7 +23,7 @@
               <?php
               $latestp = new WP_Query(array(
                    'post_type' => 'real_estate',
-                  'posts_per_page' => 6,
+                  'posts_per_page' => 9,
                 ));
                 while($latestp->have_posts()){
                   $latestp -> the_post(  );
@@ -64,6 +64,9 @@
       </div>
     </div>
   </section>
+  <div class="botn">
+  <p class="t-center no-margin"><a href="" class="btn btn--blue">VIEW All PEGASUS PROPERTIES</a></p>
+  </div>
   </div>
     <div class="hero-slider">
       <div data-glide-el="track" class="glide__track">
