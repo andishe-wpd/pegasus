@@ -29,7 +29,7 @@
                   $latestp -> the_post(  );
                   ?>
               <article class="aa-properties-item">
-                  <a href="#" class="aa-properties-item-img">
+                  <a href="<?php the_permalink(  ) ?>" class="aa-properties-item-img">
                   <img src="<?php the_field('featured_image_2') ?>" alt="img">
                 </a>
                 <div class="aa-tag <?php the_field('kind') ?>">
@@ -65,7 +65,7 @@
     </div>
   </section>
   <div class="botn">
-  <p class="t-center no-margin"><a href="" class="btn btn--blue">VIEW All PEGASUS PROPERTIES</a></p>
+  <p class="t-center no-margin"><a href="<?php echo site_url( '/real_estate' ) ?>" class="btn btn--blue">VIEW All PEGASUS PROPERTIES</a></p>
   </div>
   </div>
     <div class="hero-slider">

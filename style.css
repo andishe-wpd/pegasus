@@ -1903,6 +1903,19 @@ body.admin-bar .search-overlay {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+.single-real_estate .aa-properties-item {
+  display: inline;
+  float: left;
+  margin-top: 30px;
+  width: 90%;
+  margin-right: 3%;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
 .aa-properties-item:hover {
   box-shadow: 1px 2px 5px 3px #ccc;
 }
@@ -2146,4 +2159,10 @@ body.admin-bar .search-overlay {
 .botn {
   margin-top: 3rem;
   margin-bottom: 6rem;
+}
+#fooot {
+  padding-right: 30rem;
+  padding-left: 30rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
