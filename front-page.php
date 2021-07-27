@@ -5,7 +5,7 @@
         <h1 class="headline headline--large">FIND YOUR DREAM HOUSE</h1>
         <h2 class="headline headline--medium">YOU HAVE MONEY ?&rsquo;WE WILL LOVE YOU.</h2>
         <h3 class="headline headline--small">Why don&rsquo;t you check out the <strong>major</strong> you&rsquo;re interested in?</h3>
-        <a href="#" class="btn btn--large btn--blue">Find Your Major</a>
+        <a href="#agg" class="btn btn--large btn--blue">Find Your agent</a>
       </div>
     </div>
     <div>
@@ -170,7 +170,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sit ea nobis quae vero voluptatibus.</p>
             </div>
             <!-- agents content -->
-            <div class="aa-agents-content">
+            <div id="agg" class="aa-agents-content">
               <ul class="aa-agents-slider">
                 <?php
                 $ouragent = new WP_Query(array(

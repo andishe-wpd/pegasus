@@ -6,7 +6,7 @@
     <div class="page-banner">
       <div class="page-banner__bg-image" style="background-image: url(<?php the_field('featured_image_2') ?>);"></div>
       <div class="page-banner__content container container--narrow">
-        <h1 class="page-banner__title"><?php the_title(); ?></h1>
+        <a href="<?php the_permalink(  ) ?>"><h1 class="page-banner__title"><?php the_title(); ?></h1></a>
         <div class="page-banner__intro">
           <p><?php the_field('price'); echo ' $'?></p>
         </div>
