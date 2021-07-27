@@ -30,7 +30,7 @@ get_header();?>
                   $latestp -> the_post(  );
                   ?>
               <article class="aa-properties-item">
-                  <a href="#" class="aa-properties-item-img">
+                  <a href="<?php the_permalink(  ) ?>" class="aa-properties-item-img">
                   <img src="<?php the_field('featured_image_2') ?>" alt="img">
                 </a>
                 <div class="aa-tag <?php the_field('kind') ?>">

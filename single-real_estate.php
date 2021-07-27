@@ -30,6 +30,10 @@
                   </div>
                   <div class="aa-properties-about">
                     <h3><a href="<?php the_permalink(  ) ?>"><?php the_title() ?></a></h3>
+                    <!-- i just copy this to set smt palceholder -->
+                    <p><?php the_content() ?></p>           
+                    <p><?php the_content() ?></p>           
+                    <p><?php the_content() ?></p>           
                     <p><?php the_content() ?></p>                      
                   </div>
                   <div class="aa-properties-detial">
