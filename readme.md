@@ -8,7 +8,7 @@ little note for mr-pezeshki
 6. done --- Building the Blog Section
 7. done --- Workflow and Automation
 8. done --- Events Post Type
-9. Programs Post Type
+9. done --- Programs Post Type
 10. Professors Post Type
 11. Cleaner Code (Less Duplication)
 12. Campus Post Type
